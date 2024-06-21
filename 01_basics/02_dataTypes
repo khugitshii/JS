@@ -9,8 +9,8 @@ console.log("Khushi");
 let name = "Khushi"
 let age = 22
 let isLoggedIn = false
-let state = null //empty
-let state // undefined
+let city = null //empty
+let gender // undefined
 
 // 8 datatypes: string, number, bigint, undefined, null, symbol, and object 
 //number datatype range=> 2 power 53
