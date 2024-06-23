@@ -3,7 +3,7 @@
 // alert("3 + 3") // we are using nodejs and not a browser
 
 console.log(3 
-    + 3); // code readibility should be high
+    + 3); // this way is not good, code readibility should be high
 console.log("Khushi");
 
 let name = "Khushi"
