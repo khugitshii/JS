@@ -21,3 +21,6 @@ console.log(userTwo.email);
 
 // when we put values in Stack, we get a copy
 // when we put values in Heap, we get a reference: changes or update we do is in original value
+
+// Stack provides static memory allocation, storing static data: store the temporary variables.
+// Heap provides dynamic memory allocation, storing dynamic data: by default, all the global variables are stored.
