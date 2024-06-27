@@ -71,3 +71,47 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 // constructor, hasOwnProperty, isPrototypeOf, valueOf, toString, toLocaleString, propertyIsEnumerable, etc.
+
+// -----------------destructuring-----------------
+const course = {
+    coursename: "JS",
+    price: "999",
+    courseInstructor: "Khushi"
+}
+
+// course.courseInstructor
+
+const {courseInstructor}= course
+console.log(courseInstructor);
+
+// const {course.courseInstructor: instructor} = course
+// console.log(instructor);
+
+// in react: 
+// const navbar = ({company}) => {
+// }
+// navbar(company = "khushii")
+
+// APIs are how we write values from backend (comes in json)
+// how do we get values in API? (we get objects form and in array form too)
+
+// Object json- 
+// {
+//     name: "khushi",
+//     coursename: "Java",
+//     price: "free",
+// }
+
+// tool- JSON Formatter: to understand code or API
+[
+    {},
+    {},
+    {},
+]
+
+
+
+
+
+
+
