@@ -133,7 +133,6 @@ const addTwo = function(num){
     return num + 2
 }
 
-// Arrow Functions and Features(This keyword)----------------------------------------
 
 
 
