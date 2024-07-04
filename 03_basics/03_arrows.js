@@ -120,8 +120,3 @@ console.log(addTwo(300, 400)); // // { username: 'Khushi' }
 // myArray.forEach(() => {}) // // this is also a  correct syntax
 // myArray.forEach(() => ()) // // this is also a correct syntax
 
-
-
-
-
-
