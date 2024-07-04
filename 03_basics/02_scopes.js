@@ -21,7 +21,6 @@ if (true){
 // console.log(b); // // b is not defined
 console.log(c); // 30
 
-
 var c = 300
 if (true){
     let a = 10
