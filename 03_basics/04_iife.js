@@ -53,9 +53,7 @@
 
 // simple un-named IIFE...like using arrow function
 // parameter: name also passed
+
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
 } )('Khushi');
-
-
-
