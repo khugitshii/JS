@@ -104,6 +104,7 @@ if (true) {
 
 // console.log(username); //// the scope of username is not here, will not print
 
+
 // -------------------------------interesting concept------------------------------------
 
 function addOne(num){ // function
@@ -132,24 +133,4 @@ addTwo(5);
 const addTwo = function(num){
     return num + 2
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
