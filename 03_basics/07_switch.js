@@ -37,10 +37,10 @@
 //         break;
 // }
 
-// or string
+// or we can match a String
 
 const month = "April"
-// if else will be time-taking, so, we will use switch cases
+
 switch (month) {
     case "January":
         console.log("January");
