@@ -1,0 +1,154 @@
+ // DOM (The Document Object Model) and Event 
+ // DOM connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory
+ // The DOM represents a document with a logical tree.
+
+// DOM Interfaces, Obsolete DOM Interfaces, HTML DOM, and SVG DOM
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+        background-color: #212121;
+        color: #fff
+        }
+    </style>
+</head>
+<body>
+    <div class = "bg-black">
+        <h1 id = "title" class = "heading">DOM Learning on Chai aur Code <span style="display: none;">test the text</span></h1>
+        <h2> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+        <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, quaerat.</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class = "list-item">one</li>
+            <li class = "list-item">two</li>
+            <li class = "list-item">three</li>
+        </ul>
+    </div>
+</body> 
+</html>
+
+// Document Object Model of HTML
+// HTML has- 1. Head and 2. Body
+// 1. Head has- a. Title and b. Meta
+// a. Title has- Text Node and b. Meta has- Attribute
+// 2. Body contains- div and div has- Attribute
+// div has 2 child- h1(Heading 1) and p(Paragraph)
+// h1 has- Text Node and Attribute & p has- Text Node
+
+
+// The only reason behind the fact that it uses className over class is that-
+// the class is a reserved keyword in JavaScript 
+// and since we use JSX in React which itself is the extension of JavaScript, 
+// so we have to use className instead of class attribute.
+
+// OR-
+// when we write html in JS, especially in React, which we call JSX, we use className and not class-
+// first- it conflicts with className and second- we write only className in DOM 
+
+// getAttribute() method: syntax- getAttribute(attributeName)
+// setAttribute() method: syntax- setAttribute(name, value)
+
+// syntax for style element in console- (if I have given the id = "title")
+// title.style.backgroundColor = 'green'
+// title.style.padding = "15px"
+// title.style.borderRadius = "15px" 
+
+// attributes-
+// title.textContent : will show all the content with we have removed through display or css properties
+// title.innerText : will show the visible content
+// title.innerHTML : gives full html value with tags and content too.
+
+// getElementById, getElementByClassName
+
+
+// Another- querySelector------------
+// document.querySelector('h2')
+// document.querySelector('#title')
+// document.querySelector('.heading')
+// document.querySelector('input') for selecting input elements 
+// document.querySelector('input[]') for selecting input attribute with type or field password 
+
+// i have to select unordered list and change the color etc.
+
+// document.querySelector('ul') : selected list
+// const myul = document.querySelector('ul') : stored in variable (undefined)
+// myul.querySelector('li') : selected
+// const turnGreen = myul.querySelector('li')
+// turnGreen.style.backgroundColor = 'green'
+// turnGreen.style.padding = '10px'
+// turnGreen.innerText
+// turnGreen.innerText = "five"
+
+
+// Another (for getting more evalues and using more selectors)- querySelectorAll------------
+
+// const tempLiList = document.querySelectorAll()
+// tempLiList.style.color = 'green' // will not work
+// tempLiList[0].style.color = 'green' // will work as we said make the first element green
+
+// const myH1 = document.querySelectorAll('h1')
+// myH1.style.color = 'green' // will not work
+// myH1[0].style.color = 'green' // will work
+
+// The main difference between querySelector and querySelectorAll is about the datatype they return
+
+// use of forEach--
+// tempLiList.forEach(function (l) {})  : we can use arrow function too here
+// tempLiList.forEach(function (l) {
+//      l.style.backgroundColor = 'green'
+// })
+
+// document.getElementByClassName('list-item')
+// tempClassList.forEach(function (l) {
+//  console.log(li)
+// })
+
+// we have to use map on node list, we will have to convert HTMLCollection
+// method: using Array.from()
+
+// Array.from(tempClassList)
+// const myConvertedArray = Array.from(tempClassList)
+
+// myConvertedArray.forEach(function (li){
+//  li.style.color = 'orange'
+// })
+
+// document.querySelector(h2) : will not work
+// document.querySelector('h2') : will work
+// const allH2 = document.querySelectorAll('h2')
+
+// allH2[0].inerText 
+// allH2[1].inerText 
+
+// myH2.forEach(function (h){
+//  h.style.color = 'red'
+// })
+
+
+// manipulating page values---
+
+// myH2.forEach(function(h){
+//  h.style.color = 'black';
+// h.style.backgroundColor = 'green';
+// h.style.padding = '10px'   
+// })
+
+// myH2.forEach(function(h){
+//  h.style.color = 'black';
+// h.style.backgroundColor = 'green';
+// h.style.padding = '10px';
+// h.innerText = "Khushi"
+// })
+
+
+
+
+
+
+
